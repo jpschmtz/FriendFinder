@@ -4,7 +4,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Friend Finder</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    	<!-- Link to the jQuery Library -->
+  	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <metaclass="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 <script>
@@ -21,37 +23,146 @@
             <h1 class="display-4"><i class="fas fa-fire"></i>Friend Finder</h1>
             <p class="lead">Answer the survey to find a frend now!</p>
             <hr class="my-4">
-            <a class="btn btn-danger btn-lg" href="../16-HotRestaurant/index.html" role="button">Home</a>
-            <a class="btn btn-warning btn-lg" href="../16-HotRestaurant/tables.html" role="button">View Tables</a>
+            <a class="btn btn-danger btn-lg" href="../public/home.html" role="button">Home</a>
+            <a class="btn btn-warning btn-lg" href="../public/survey.html" role="button">Take Survey</a>
         </div>
 
-        <form>
+        <form class="user-form">
             <div class="form-group">
                 <label for="name">Name</label>
-                <input type="input" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <input type="input" class="form-control" id="userName" aria-describedby="emailHelp">
             </div>
 
             <div class="form-group">
-                <label for="number">Phone Number</label>
-                <input type="input" class="form-control" id="exampleInputPassword1">
+                <label for="photo">Paste a Photo Link</label>
+                <input type="input" class="form-control" id="userPhoto">
             </div>
 
             <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <label for="exampleQuestionOne">Do you like pets?</label>
+                <br> NO-
+                <input type="radio" name="QuestionOne" value="1"> 1            
+                <input type="radio" name="QuestionOne" value="2"> 2
+                <input type="radio" name="QuestionOne" value="3"> 3
+                <input type="radio" name="QuestionOne" value="4"> 4
+                <input type="radio" name="QuestionOne" value="5"> 5 -YES
             </div>
-
             <div class="form-group">
-                <label for="uniqueID">Unique ID</label>
-                <input type="input" class="form-control" id="exampleInputPassword1">
-            </div>
-            
-            <button type="submit" class="btn btn-primary">Submit</button>
+                <label for="exampleQuestionTwo">Do you like foot massages?</label>
+                <br> NO-
+                <input type="radio" name="QuestionTwo" value="1"> 1            
+                <input type="radio" name="QuestionTwo" value="2"> 2
+                <input type="radio" name="QuestionTwo" value="3"> 3
+                <input type="radio" name="QuestionTwo" value="4"> 4
+                <input type="radio" name="QuestionTwo" value="5"> 5 -YES
+            </div>         
+            <div class="form-group">
+                <label for="exampleQuestionThree">Do you like walks by the sea?</label>
+                <br> NO-
+                <input type="radio" name="QuestionThree" value="1"> 1            
+                <input type="radio" name="QuestionThree" value="2"> 2
+                <input type="radio" name="QuestionThree" value="3"> 3
+                <input type="radio" name="QuestionThree" value="4"> 4
+                <input type="radio" name="QuestionThree" value="5"> 5 -YES
+            </div>         
+            <div class="form-group">
+                <label for="exampleQuestionFour">Do you like Indian food?</label>
+                <br> NO-
+                <input type="radio" name="QuestionFour" value="1"> 1            
+                <input type="radio" name="QuestionFour" value="2"> 2
+                <input type="radio" name="QuestionFour" value="3"> 3
+                <input type="radio" name="QuestionFour" value="4"> 4
+                <input type="radio" name="QuestionFour" value="5"> 5 -YES
+            </div>         
+            <div class="form-group">
+                <label for="exampleQuestionFive">Do you like stinky cheese?</label>
+                <br> NO-
+                <input type="radio" name="QuestionFive" value="1"> 1            
+                <input type="radio" name="QuestionFive" value="2"> 2
+                <input type="radio" name="QuestionFive" value="3"> 3
+                <input type="radio" name="QuestionFive" value="4"> 4
+                <input type="radio" name="QuestionFive" value="5"> 5 -YES
+            </div>         
+            <div class="form-group">
+                <label for="exampleQuestionSix">Do you like Air Jordans?</label>
+                <br> NO-
+                <input type="radio" name="QuestionSix" value="1"> 1            
+                <input type="radio" name="QuestionSix" value="2"> 2
+                <input type="radio" name="QuestionSix" value="3"> 3
+                <input type="radio" name="QuestionSix" value="4"> 4
+                <input type="radio" name="QuestionSix" value="5"> 5 -YES
+            </div>         
+            <div class="form-group">
+                <label for="exampleQuestionSeven">Do you like Swatches?</label>
+                <br> NO-
+                <input type="radio" name="QuestionSeven" value="1"> 1            
+                <input type="radio" name="QuestionSeven" value="2"> 2
+                <input type="radio" name="QuestionSeven" value="3"> 3
+                <input type="radio" name="QuestionSeven" value="4"> 4
+                <input type="radio" name="QuestionSeven" value="5"> 5 -YES
+            </div>         
+            <div class="form-group">
+                <label for="exampleQuestionEight">Do you like drinking beers?</label>
+                <br> NO-
+                <input type="radio" name="QuestionEight" value="1"> 1            
+                <input type="radio" name="QuestionEight" value="2"> 2
+                <input type="radio" name="QuestionEight" value="3"> 3
+                <input type="radio" name="QuestionEight" value="4"> 4
+                <input type="radio" name="QuestionEight" value="5"> 5 -YES
+            </div>         
+            <div class="form-group">
+                <label for="exampleQuestionNine">Do you like hot tubs?</label>
+                <br> NO-
+                <input type="radio" name="QuestionNine" value="1"> 1            
+                <input type="radio" name="QuestionNine" value="2"> 2
+                <input type="radio" name="QuestionNine" value="3"> 3
+                <input type="radio" name="QuestionNine" value="4"> 4
+                <input type="radio" name="QuestionNine" value="5"> 5 -YES
+            </div>         
+            <div class="form-group">
+                <label for="exampleQuestionTen">Do you like black coffee?</label>
+                <br> NO-
+                <input type="radio" name="QuestionTen" value="1"> 1            
+                <input type="radio" name="QuestionTen" value="2"> 2
+                <input type="radio" name="QuestionTen" value="3"> 3
+                <input type="radio" name="QuestionTen" value="4"> 4
+                <input type="radio" name="QuestionTen" value="5"> 5 -YES
+            </div>         
+
+            <button type="submit" class="submitButton">Submit</button>
         </form>
         
         
     </div>
-
-    
+	<script type="text/javascript">
+		$(document).ready(function() {
+		
+		// Activate submit button
+		$('.submitButton').on('click', function(event) {
+            event.preventDefault();
+            var userInput = {
+				name: $('#userName').val(),
+				photo: $('#userPhoto').val(),
+				scores:[
+					$("input[name='QuestionOne']:checked").val(),
+					$("input[name='QuestionTwo']:checked").val(),
+					$("input[name='QuestionThree']:checked").val(),
+					$("input[name='QuestionFour']:checked").val(),
+					$("input[name='QuestionFive']:checked").val(),
+					$("input[name='QuestionSix']:checked").val(),
+					$("input[name='QuestionSeven']:checked").val(),
+					$("input[name='QuestionEight']:checked").val(),
+					$("input[name='QuestionNine']:checked").val(),
+					$("input[name='QuestionTen']:checked").val()
+				]
+            };
+            $.post('/api/friends', userInput)
+      		.done(function(data) {
+                console.log('Data = ' + JSON.stringify(data));
+                
+              });
+        });
+    });
+    </script>
 </body>
 </html>
